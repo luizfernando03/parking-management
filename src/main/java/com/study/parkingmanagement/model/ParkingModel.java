@@ -15,18 +15,19 @@ import java.util.UUID;
 @Table(name = "TB_PARKING")
 public class ParkingModel implements Serializable {
     private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-   @Column (nullable = false, unique = true, length = 10)
-   private String numeroDaVaga;
-   @Column (nullable = false, unique = true, length = 7)
-   private String PlacaDoCarro;
-   @Column(nullable = false,length = 20)
+    @Column(nullable = false, unique = true, length = 10)
+    private String numeroDaVaga;
+    @Column(nullable = false, unique = true, length = 7)
+    private String PlacaDoCarro;
+    @Column(nullable = false, length = 20)
     private String modeloDoCarro;
-   @Column(nullable = false,length = 50)
+    @Column(nullable = false, length = 50)
     private String nomeDono;
-   @Column(nullable = false )
+    @Column(nullable = false)
     private LocalDateTime dataDaEntrada;
 
 
