@@ -13,5 +13,8 @@ public class ParkingController {
 
     final ParkingService parkingService;
 
-    
+    public ParkingController(ParkingService parkingService) {
+        this.parkingService = parkingService;
+    }
+
 }
